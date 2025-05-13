@@ -1,0 +1,224 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 36px 20px 20px 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.close-modal,
+.close-career-modal {
+    color: #aaa;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.close-modal:hover,
+.close-career-modal:hover {
+    color: black;
+}
+
+.project-details {
+    margin-top: 20px;
+}
+
+.project-info h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.project-info li {
+    margin-bottom: 5px;
+}
+
+.modal-markdown {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    padding: 32px 56px;
+    line-height: 1.7;
+    font-size: 1.08rem;
+}
+
+.modal-markdown h1 {
+    font-size: 1.7rem;
+    margin: 1.2em 0 0.7em 0;
+    color: #1761a0;
+    font-weight: 700;
+}
+
+.modal-markdown h2 {
+    font-size: 1.25rem;
+    margin: 1.1em 0 0.6em 0;
+    color: #23272c;
+    font-weight: 600;
+}
+
+.modal-markdown h3 {
+    font-size: 1.08rem;
+    margin: 1em 0 0.5em 0;
+    color: #444;
+    font-weight: 600;
+}
+
+.modal-markdown ul,
+.modal-markdown ul ul,
+.modal-markdown ul ul ul,
+.modal-markdown ul ul ul ul {
+    list-style-type: disc;
+    margin-left: 1.5em;
+    padding-left: 0;
+}
+
+.modal-markdown ul li,
+.modal-markdown ul ul li,
+.modal-markdown ul ul ul li,
+.modal-markdown ul ul ul ul li {
+    position: static;
+    padding-left: 0;
+}
+
+.modal-markdown ul li:before,
+.modal-markdown ul ul li:before,
+.modal-markdown ul ul ul li:before,
+.modal-markdown ul ul ul ul li:before {
+    content: none !important;
+    display: none !important;
+}
+
+.modal-markdown .li-title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.1em;
+    color: #222;
+}
+
+.modal-markdown .li-desc {
+    display: block;
+    margin-left: 1.2em;
+    color: #444;
+    font-size: 1rem;
+    margin-top: 0.1em;
+    margin-bottom: 0.7em;
+    line-height: 1.6;
+}
+
+.modal-markdown-raw {
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+    font-size: 1.05rem;
+    color: #23272c;
+    background: #f7f7f7;
+    padding: 18px 12px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.modal-markdown blockquote {
+    background: #f3f6fa;
+    border-left: 4px solid #1761a0;
+    color: #1761a0;
+    margin: 1.2em 0;
+    padding: 0.8em 1.2em;
+    font-style: italic;
+    font-size: 1.04rem;
+}
+
+.modal-markdown code {
+    background: #f4f4f4;
+    color: #c7254e;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+    font-size: 0.98em;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.modal-markdown h1, .modal-markdown h2, .modal-markdown h3 {
+    margin-top: 2.1em;
+    margin-bottom: 0.7em;
+    font-weight: 700;
+}
+
+.modal-markdown h1 {
+    font-size: 1.7rem;
+    color: #1761a0;
+    border-bottom: 2px solid #e3eaf1;
+    padding-bottom: 0.2em;
+}
+
+.modal-markdown h2 {
+    font-size: 1.22rem;
+    color: #23272c;
+    border-bottom: 1px solid #e3eaf1;
+    padding-bottom: 0.1em;
+}
+
+.modal-markdown h3 {
+    font-size: 1.08rem;
+    color: #444;
+}
+
+.modal-markdown .li-title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.1em;
+    color: #222;
+}
+
+.modal-markdown .li-desc {
+    display: block;
+    margin-left: 1.2em;
+    color: #444;
+    font-size: 1rem;
+    margin-top: 0.1em;
+    margin-bottom: 0.7em;
+    line-height: 1.6;
+}
+
+.modal-markdown br {
+    display: block;
+    margin: 0.5em 0;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+        padding: 20px 8px;
+    }
+    .modal-markdown {
+        padding: 16px 0;
+    }
+} 

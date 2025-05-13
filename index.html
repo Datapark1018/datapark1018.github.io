@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATAPARK - 데이터 멀티태스커</title>
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="#home"><img src="static/images/로고_화이트.png" alt="DATAPARK"></a></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-nav">
+                <a href="https://github.com/datapark1018" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://velog.io/@datapark1018/posts" target="_blank"><i class="fas fa-blog"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline loading="lazy">
+            <source src="static/images/background.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+            </h1>
+            <h2>안녕하세요<br>데이터 멀티태스커 <span class="highlight">박성호</span> 입니다</h2>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="static/images/me2.png" alt="박성호">
+                </div>
+                <div class="profile-info">
+                    <div class="info-item">
+                        <h3>이름</h3>
+                        <p>박성호</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>나이</h3>
+                        <p>28세 (1996.07.29)</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>학력</h3>
+                        <p>신한대학교 글로벌통상경영학과</p>
+                        <p>선린인터넷고등학교 멀티미디어학과</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>연락처</h3>
+                        <p>datapark1018@gmail.com</p>
+                        <p>010-3236-6724</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>자격증</h3>
+                        <p>데이터분석준전문가 (ADsP)</p>
+                        <p>SQL Developer (SQLD)</p>
+                        <p>TOEIC 910</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>경력</h3>
+                        <p>2025~현재 - 데이터앤솔루션 (Data Engineer)</p>
+                        <p>2023~2024 - KVC (Product Manager)</p>
+                        <p>2022~2023 - 빌트온 (Quality Improvement)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>소개</h3>
+                <p>데이터와 기술, 그리고 창의적 사고를 바탕으로 문제해결 중심의 데이터 멀티태스커 박성호 입니다.<br>
+                다양한 분야의 경험을 여러 분야의 비즈니스 모델에 빠르고 유연하게 적응하고 문제를 해결하는 것이 저의 강점입니다.<br>
+                새로운 도전을 두려워하지 않고 계속해서 앞으로 나아가는 것이 목표입니다.</p>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>SQL</li>
+                    <li>Docker</li>
+                    <li>Machine Learning</li>
+                    <li>Tableau</li>
+                    <li>React</li>
+                    <li>R</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="career" class="career">
+        <h2>My Career</h2>
+        <div class="career-timeline">
+            <div class="career-item">
+                <div class="career-date">2025 - 현재</div>
+                <div class="career-content">
+                    <h3>데이터앤솔루션</h3>
+                    <h4>Data Engineer</h4>
+                    <ul>
+                        <li>국내외 11개사 유명 e-commerce 플랫폼 데이터 파이프라인 구축</li>
+                        <li>데이터 모니터링 시스템 개발 및 속도 최적화</li>
+                        <li>글로벌 상품 데이터 표준 SKU 매칭 자동화 시스템 개발</li>
+                    </ul>
+                    <button class="career-detail-btn" data-career="1">자세히 보기</button>
+                </div>
+            </div>
+            <div class="career-item">
+                <div class="career-date">2023 - 2024</div>
+                <div class="career-content">
+                    <h3>KVC</h3>
+                    <h4>Product Manager</h4>
+                    <ul>
+                        <li>데이터 파이프라인 시스템 개선 및 효율 최적화</li>
+                        <li>데이터 분석 보고서 작성 및 데이터 프로세스 관리</li>
+                        <li>전반적인 프로젝트 관리 및 6개 협력사 및 70개 회원사 대응</li>
+                    </ul>
+                    <button class="career-detail-btn" data-career="2">자세히 보기</button>
+                </div>
+            </div>
+            <div class="career-item">
+                <div class="career-date">2022 - 2023</div>
+                <div class="career-content">
+                    <h3>빌트온</h3>
+                    <h4>Quality Improvement</h4>
+                    <ul>
+                        <li>해외 유명 쇼핑몰 8개국 언어 데이터 품질 관리</li>
+                        <li>중복 SKU 탐지 개발 및 데이터 QC 시스템 고도화</li>
+                        <li>프로세스 통합 및 효율 최적화</li>
+                    </ul>
+                    <button class="career-detail-btn" data-career="3">자세히 보기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-main">
+                    <div class="project-content">
+                        <h3>스마트 ITS 교통 시스템 구축</h3>
+                        <p>실시간 교통 데이터를 활용한 지능형 교통 시스템 개발</p>
+                        <div class="project-info">
+                            <h4>주요 기능</h4>
+                            <ul class="project-features">
+                                <li>실시간 교통량 모니터링</li>
+                                <li>교통 신호 최적화</li>
+                                <li>사고 위험 예측</li>
+                            </ul>
+                            <h4>사용 기술</h4>
+                            <ul class="project-tech">
+                                <li>Python, TensorFlow</li>
+                                <li>OpenCV, YOLO</li>
+                                <li>Docker, AWS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="./static/images/projects/project1.png" alt="ITS System">
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="button view-project" data-project="1">
+                        <i class="fas fa-window-restore"></i>Details</a>
+                        <a href="#" class="button"><i class="fab fa-github"></i>GitHub</a>
+                        <a href="#" class="button"><i class="fas fa-file-pdf"></i>PDF</a>
+                        <a href="#" class="button"><i class="fas fa-file-code"></i>Colab</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-main">
+                    <div class="project-content">
+                        <h3>AI 기반 데이터 분석 자동화 플랫폼</h3>
+                        <p>머신러닝을 활용한 데이터 분석 및 인사이트 도출 자동화</p>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <h4>주요 기능</h4>
+                                <ul>
+                                    <li>데이터 전처리 자동화</li>
+                                    <li>AI 모델 자동 학습</li>
+                                    <li>인사이트 리포트 생성</li>
+                                </ul>
+                                <h4>사용 기술</h4>
+                                <ul>
+                                    <li>Python, Scikit-learn</li>
+                                    <li>Django, React</li>
+                                    <li>PostgreSQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="static/images/projects/project1.png" alt="AI Platform">
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="button view-project" data-project="2">
+                        <i class="fas fa-window-restore"></i>Details</a>
+                    <a href="#" class="button"><i class="fab fa-github"></i>GitHub</a>
+                    <a href="#" class="button"><i class="fas fa-file-pdf"></i>PDF</a>
+                    <a href="#" class="button"><i class="fas fa-file-code"></i>Colab</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-main">
+                    <div class="project-content">
+                        <h3>실시간 대시보드 및 시각화 웹앱</h3>
+                        <p>데이터 시각화와 실시간 모니터링을 위한 대시보드 시스템</p>
+                        <div class="project-details">
+                            <div class="project-info">
+                                <h4>주요 기능</h4>
+                                <ul>
+                                    <li>실시간 데이터 시각화</li>
+                                    <li>인터랙티브 차트</li>
+                                    <li>커스텀 리포트</li>
+                                </ul>
+                                <h4>사용 기술</h4>
+                                <ul>
+                                    <li>React, D3.js</li>
+                                    <li>Node.js, Express</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="static/images/projects/project1.png" alt="Dashboard">
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="button view-project" data-project="3">
+                        <i class="fas fa-window-restore"></i>Details</a>
+                    <a href="#" class="button"><i class="fab fa-github"></i>GitHub </a>
+                    <a href="#" class="button"><i class="fas fa-file-pdf"></i>PDF </a>
+                    <a href="#" class="button"><i class="fas fa-file-code"></i>Colab </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2 id="modalTitle"></h2>
+                <div class="project-details">
+                    <div class="project-info">
+                        <h3>프로젝트 개요</h3>
+                        <p id="modalOverview"></p>
+                        
+                        <h3>주요 기능</h3>
+                        <ul id="modalFeatures"></ul>
+                        
+                        <h3>사용 기술</h3>
+                        <ul id="modalTech"></ul>
+                        
+                        <h3>담당 역할</h3>
+                        <p id="modalRole"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Career Modal -->
+    <div id="careerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-career-modal">&times;</span>
+            <div class="career-modal-body">
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>datapark1018@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>010-3236-6724</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>서울특별시 금천구</p>
+                </div>
+            </div>
+            
+            <div class="contact-message">
+                <h3>☕ Coffee Chat</h3>
+                <p>프로젝트 또는 협업 관련하여 문의사항이 있으시다면<br>언제든지 연락 주시면 감사하겠습니다</p>
+                <div class="social-links">
+                    <a href="https://github.com/datapark1018" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://velog.io/@datapark1018/posts" class="social-link" target="_blank">
+                        <i class="fas fa-blog"></i>
+                        <span>Velog</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DATAPARK. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js" defer></script>
+    <script src="static/js/project-modal.js" defer></script>
+    <script src="static/js/career-modal.js" defer></script>
+</body>
+</html> 
